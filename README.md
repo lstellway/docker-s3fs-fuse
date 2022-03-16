@@ -14,7 +14,7 @@ This image is based on [Alpine Linux](https://hub.docker.com/_/alpine).
 
 ```sh
 $ docker run --rm --interactive --tty \
-  lstellway/s3fs-fuse-bin <command>
+  lstellway/s3fs-fuse <command>
 ```
 
 ## Building
@@ -26,8 +26,8 @@ To build an Alpine Docker image with S3FS:
 RUN apk update && apk add --no-cache \
     libxml2 fuse libcurl libstdc++
 
-# Copy the binary from the lstellway/s3fs-fuse-bin image
-COPY --from=lstellway/s3fs-fuse-bin /usr/local/bin/s3fs /usr/local/bin/s3fs
+# Copy the binary from the lstellway/s3fs-fuse image
+COPY --from=lstellway/s3fs-fuse /usr/local/bin/s3fs /usr/local/bin/s3fs
 ```
 
 ## Reference
