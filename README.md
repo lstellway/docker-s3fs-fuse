@@ -32,6 +32,7 @@ COPY --from=lstellway/s3fs-fuse /usr/local/bin/s3fs /usr/local/bin/s3fs
 
 ## Reference
 
+-   [Docker Hub Repository](https://hub.docker.com/r/lstellway/s3fs-fuse)
 -   [Docker S3FS Fuse GitHub Repository](https://github.com/lstellway/docker-s3fs-fuse)
 -   [S3FS GitHub Repository](https://github.com/s3fs-fuse/s3fs-fuse)
 -   [Issues](https://github.com/lstellway/docker-s3fs-fuse-bin/issues)
